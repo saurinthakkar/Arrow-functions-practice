@@ -43,8 +43,28 @@
 //     : () => alert("you cancelled execution");
 
 // answer();
-import { add } from "./add.js";
-import { sub } from "./sub.js";
 
-alert(add(6, 4));
-console.log(sub(9, 4));
+//Import / Export Modules
+// import { add } from "./add.js";
+// import { sub } from "./sub.js";
+
+// alert(add(6, 4));
+// console.log(sub(9, 4));
+
+//Destructuring Object
+
+let scores = [500, 400, 600];
+
+let [x, y, z, w] = scores;
+
+console.log(x, y, z, w);
+
+let score = {
+  pass: 80,
+  avg: 50,
+  fail: 30,
+};
+
+let { pass, avg, fail } = score;
+
+console.log(typeof pass, avg, fail);
