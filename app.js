@@ -35,11 +35,16 @@
 //   }
 // );
 
-let ask = confirm("Do you agree");
+// let ask = confirm("Do you agree");
 
-let answer =
-  ask === true
-    ? () => alert("you agreed")
-    : () => alert("you cancelled execution");
+// let answer =
+//   ask === true
+//     ? () => alert("you agreed")
+//     : () => alert("you cancelled execution");
 
-answer();
+// answer();
+import { add } from "./add.js";
+import { sub } from "./sub.js";
+
+alert(add(6, 4));
+console.log(sub(9, 4));
