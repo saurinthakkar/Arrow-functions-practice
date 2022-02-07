@@ -53,18 +53,39 @@
 
 //Destructuring Object
 
-let scores = [500, 400, 600];
+// let scores = [500, 400, 600];
 
-let [x, y, z, w] = scores;
+// let [x, y, z, w] = scores;
 
-console.log(x, y, z, w);
+// console.log(x, y, z, w);
 
-let score = {
-  pass: 80,
-  avg: 50,
-  fail: 30,
+// let score = {
+//   pass: 80,
+//   avg: 50,
+//   fail: 30,
+// };
+
+// let { pass, avg, fail } = score;
+
+// console.log(typeof pass, avg, fail);
+
+//ES6 spread operator
+
+// const collectOne = [10, 20, 30];
+// const collectTwo = [40, 50, 60];
+
+// let collectThree = [...collectOne, ...collectTwo];
+
+// console.log(collectThree);
+
+// let scores = [500, 400, 300];
+
+// let [x, ...y] = scores;
+
+// console.log(x, y);
+
+var add = (a, b) => {
+  return a + b;
 };
 
-let { pass, avg, fail } = score;
-
-console.log(typeof pass, avg, fail);
+console.log(add(2, 9));
