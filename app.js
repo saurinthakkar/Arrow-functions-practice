@@ -84,8 +84,16 @@
 
 // console.log(x, y);
 
-var add = (a, b) => {
-  return a + b;
-};
+// var add = (a, b) => {
+//   return a + b;
+// };
 
-console.log(add(2, 9));
+// console.log(add(2, 9));
+// string length
+let txt = "saurinthakkar1234566";
+console.log(txt.length);
+
+//string slice
+
+let str = "Apple product test";
+console.log(str.substring(4, 2));
