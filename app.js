@@ -90,10 +90,36 @@
 
 // console.log(add(2, 9));
 // string length
-let txt = "saurinthakkar1234566";
-console.log(txt.length);
+// let txt = "saurinthakkar1234566";
+// console.log(txt.length);
 
-//string slice
+// //string slice
 
-let str = "Apple product test";
-console.log(str.substring(4, 2));
+// let str = "Apple product test";
+// console.log(str.substring(4, 2));
+//Fibonacci series
+
+const arr1 = [0, 1, 1, 2, 3, 5, 8];
+const arr2 = [1, 2, 3, 5, 8, 13];
+const arr3 = [0, 1];
+const arr4 = [0, 1, 1, 2, 8, 4];
+
+function fibo(arr) {
+  if (arr.length < 3) {
+    return false;
+  } else {
+    for (let i = 2; i < arr.length; i++) {
+      //console.log(arr[i] === arr[i - 1] + arr[i - 1]);
+      if (arr[i] !== arr[i - 1] + arr[i - 2]) {
+        return false;
+      }
+      //console.log(arr[i] === arr[i - 1] + arr[i - 1]);
+    }
+    return true;
+  }
+}
+
+console.log(fibo(arr1));
+console.log(fibo(arr2));
+console.log(fibo(arr3));
+console.log(fibo(arr4));
